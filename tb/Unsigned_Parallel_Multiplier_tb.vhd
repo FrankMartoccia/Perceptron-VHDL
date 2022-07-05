@@ -73,7 +73,7 @@ architecture beh of Unsigned_Parallel_Multiplier_tb is
 				w_tb <= "011101111";
 				wait for 400 ns;
 				x_tb <= "11011011";
-				w_tb <= "01001101";
+				w_tb <= "001001101";
 				wait for 400 ns;
 				x_tb <= (others => '0');
 				w_tb <= (others => '0');

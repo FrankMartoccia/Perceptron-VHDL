@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity Parallel_Multiplier_tb is  
-end Parallel_Multiplier_tb;
+entity Signed_Parallel_Multiplier_tb is  
+end Signed_Parallel_Multiplier_tb;
 
-architecture beh of Parallel_Multiplier_tb is
+architecture beh of Signed_Parallel_Multiplier_tb is
 
 	-- Constants
 
@@ -73,7 +73,7 @@ architecture beh of Parallel_Multiplier_tb is
 				w_tb <= "011101111";
 				wait for 400 ns;
 				x_tb <= "11011011";
-				w_tb <= "01001101";
+				w_tb <= "001001101";
 				wait for 400 ns;
 				x_tb <= (others => '0');
 				w_tb <= (others => '0');

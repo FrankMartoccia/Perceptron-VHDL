@@ -8,3 +8,12 @@ modelsim/_vmake
 Perceptron.cr.mti
 Perceptron.mpf
 vsim.wlf
+*.qpg
+*.qtl
+*.qtl
+*.qpg
+*.qpg
+*.qtl
+modelsim/_lib1_5.qpg
+modelsim/_lib1_5.qtl
+*.qpg
