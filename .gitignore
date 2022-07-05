@@ -1,0 +1,10 @@
+
+modelsim/_info
+modelsim/_lib.qdb
+*.qdb
+modelsim/_lib1_0.qpg
+modelsim/_lib1_0.qtl
+modelsim/_vmake
+Perceptron.cr.mti
+Perceptron.mpf
+vsim.wlf
