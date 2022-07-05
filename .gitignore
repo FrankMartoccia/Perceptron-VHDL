@@ -1,4 +1,4 @@
-
+modelsim/
 modelsim/_info
 modelsim/_lib.qdb
 *.qdb
@@ -17,3 +17,6 @@ vsim.wlf
 modelsim/_lib1_5.qpg
 modelsim/_lib1_5.qtl
 *.qpg
+modelsim/_lib1_5.qpg
+modelsim/_lib1_5.qpg
+modelsim/_lib1_5.qpg
