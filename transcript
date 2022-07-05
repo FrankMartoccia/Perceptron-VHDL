@@ -1,0 +1,25 @@
+# Compile of FULL_ADDER.vhd was successful.
+# Compile of HALF_ADDER.vhd was successful.
+# Compile of Signed_Parallel_Multiplier.vhd was successful.
+# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
+# Compile of Signed_Parallel_Multiplier_tb.vhd was successful.
+# Compile of Unsigned_Parallel_Multiplier_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.signed_parallel_multiplier_tb
+# vsim -gui work.signed_parallel_multiplier_tb 
+# Start time: 18:47:22 on Jul 05,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.signed_parallel_multiplier_tb(beh)
+# Loading work.signed_parallel_multiplier(beh)
+# Loading work.unsigned_parallel_multiplier(beh)
+# Loading work.half_adder(dataflow)
+# Loading work.full_adder(dataflow)
+add wave -position insertpoint  \
+sim:/signed_parallel_multiplier_tb/x_tb \
+sim:/signed_parallel_multiplier_tb/w_tb \
+sim:/signed_parallel_multiplier_tb/p_tb \
+sim:/signed_parallel_multiplier_tb/clk
+run -all
