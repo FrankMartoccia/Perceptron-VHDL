@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity DFF_N is
-	generic( N : integer);
+	generic(N : integer);
 		
 	port( 
 		clk     : in std_logic;

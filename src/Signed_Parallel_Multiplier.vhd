@@ -28,8 +28,8 @@ architecture beh of Signed_Parallel_Multiplier is
 			);
 	end component Unsigned_Parallel_Multiplier;
 
-	signal x_sign: std_logic; -- Sign of the x_p_sign vector
-    signal w_sign: std_logic; -- Sign of the w_p_sign vector
+	signal x_sign    : std_logic; -- Sign of the x_p_sign vector
+    signal w_sign    : std_logic; -- Sign of the w_p_sign vector
 	signal x_p_unsign: std_logic_vector(Nbit_x - 1 downto 0); -- x_p vector without sign
     signal w_p_unsign: std_logic_vector(Nbit_w - 1 downto 0); -- w_p vector without sign
     signal p_unsign  : std_logic_vector(Nbit_x + Nbit_w - 1 downto 0); -- p vector without sign
@@ -48,8 +48,8 @@ begin
             Nbit_w => Nbit_w
         )
         port map(
-            x_p =>  x_p_unsign,
-            w_p =>  w_p_unsign,
+            x_p => x_p_unsign,
+            w_p => w_p_unsign,
             p   => p_unsign
         );
 	

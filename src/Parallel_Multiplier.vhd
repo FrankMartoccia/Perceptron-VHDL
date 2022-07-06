@@ -56,7 +56,7 @@ architecture beh of Parallel_Multiplier is
     end component Signed_Parallel_Multiplier; 
 
     component DFF_N is
-        generic( N : integer);
+        generic(N : integer);
             
         port( 
             clk     : in std_logic;
