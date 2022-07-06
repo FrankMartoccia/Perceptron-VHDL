@@ -4,8 +4,8 @@ use IEEE.std_logic_1164.all;
 entity Ripple_carry_adder is
   generic (Nbit : positive);
   port (
-    a    : in std_logic_vector(Nbit - 1 downto 0);
-    b    : in std_logic_vector(Nbit - 1 downto 0);
+    a    : in std_logic_vector(Nbit - 2 downto 0);
+    b    : in std_logic_vector(Nbit - 2 downto 0);
     cin  : in std_logic;
     s    : out std_logic_vector (Nbit - 1 downto 0);
     cout : out std_logic

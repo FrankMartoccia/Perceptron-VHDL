@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity Adder_Tree is 
     port(
@@ -78,7 +79,12 @@ architecture beh of Adder_Tree is
      signal l4_s1_in1: std_logic_vector(19 downto 0);
      signal l4_s1_in2: std_logic_vector(19 downto 0);
 
+     signal resized_b: std_logic_vector(17 downto 0);
+
 begin
+
+    -- Resize of the bias vector
+    resized_b <= std_logic_vector(resize(signed(b), resized_b'length));
 
     -- First layer of adders
     l1_s1: Ripple_carry_adder 
@@ -200,7 +206,7 @@ begin
             a => l2_s1_in1;
             b => l2_s1_in2;
             cin => '0';
-            s => l1_s1_out;
+            s => l2_s1_out;
             cout => open
         );
     l2_r1: DFF_N
@@ -210,8 +216,8 @@ begin
         port map(
             clk => clk;
             a_rst_n => rst;
-            d => l1_s1_out;
-            q => l2_s1_in1;
+            d => l2_s1_out;
+            q => l3_s1_in1;
         );
 
     l2_s2: Ripple_carry_adder 
@@ -219,10 +225,10 @@ begin
             Nbit => 19;
         )
         port map(
-            a => l1_s1_in1;
-            b => l1_s1_in2;
+            a => l2_s2_in1;
+            b => l2_s2_in2;
             cin => '0';
-            s => l1_s1_out;
+            s => l2_s2_out;
             cout => open
         );
     l2_r2: DFF_N
@@ -232,8 +238,8 @@ begin
         port map(
             clk => clk;
             a_rst_n => rst;
-            d => l1_s1_out;
-            q => l2_s1_in1;
+            d => l2_s2_out;
+            q => l3_s1_in2;
         );
 
     l2_s3: Ripple_carry_adder 
@@ -241,10 +247,10 @@ begin
             Nbit => 19;
         )
         port map(
-            a => l1_s1_in1;
-            b => l1_s1_in2;
+            a => l2_s3_in1;
+            b => resized_b;
             cin => '0';
-            s => l1_s1_out;
+            s => l2_s3_out;
             cout => open
         );
     l2_r3: DFF_N
@@ -254,8 +260,8 @@ begin
         port map(
             clk => clk;
             a_rst_n => rst;
-            d => l1_s1_out;
-            q => l2_s1_in1;
+            d => l2_s3_out;
+            q => l4_s1_in2;
         );
 
     -- Third layer of adders
@@ -264,10 +270,10 @@ begin
             Nbit => 20;
         )
         port map(
-            a => l1_s1_in1;
-            b => l1_s1_in2;
+            a => l3_s1_in1;
+            b => l3_s1_in2;
             cin => '0';
-            s => l1_s1_out;
+            s => l3_s1_out;
             cout => open
         );
     l3_r1: DFF_N
@@ -277,20 +283,20 @@ begin
         port map(
             clk => clk;
             a_rst_n => rst;
-            d => l1_s1_out;
-            q => l2_s1_in1;
+            d => l3_s1_out;
+            q => l4_s1_in1;
         );
 
     -- Fourth layer of adders
     l4_s1: Ripple_carry_adder 
         generic map(
-            Nbit => 18;
+            Nbit => 21;
         )
         port map(
-            a => l1_s1_in1;
-            b => l1_s1_in2;
+            a => l4_s1_in1;
+            b => l4_s1_in2;
             cin => '0';
-            s => l1_s1_out;
+            s => sum;
             cout => open
         );
 
