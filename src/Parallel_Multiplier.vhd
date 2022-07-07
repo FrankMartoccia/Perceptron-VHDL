@@ -55,18 +55,6 @@ architecture beh of Parallel_Multiplier is
         );
     end component Signed_Parallel_Multiplier; 
 
-    component DFF_N is
-        generic(N : integer);
-            
-        port( 
-            clk     : in std_logic;
-            a_rst_n : in std_logic;
-            d       : in std_logic_vector(N - 1 downto 0);
-            q       : out std_logic_vector(N - 1 downto 0)
-        );
-                
-    end component DFF_N;
-
 begin
     SPM_0: Signed_Parallel_Multiplier
         generic map(
