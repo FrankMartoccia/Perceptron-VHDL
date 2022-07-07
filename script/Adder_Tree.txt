@@ -31,16 +31,16 @@ architecture beh of Adder_Tree_tb is
 	end component Adder_Tree;
 	
 	-- Signals used in the TB 
-	signal l1_s1_in1_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s1_in2_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s2_in1_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s2_in2_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s3_in1_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s3_in2_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s4_in1_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s4_in2_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s5_in1_tb : in std_logic_vector(16 downto 0):= (others => '0');
-	signal l1_s5_in2_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in1_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in2_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in3_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in4_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in5_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in6_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in7_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in8_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in9_tb : in std_logic_vector(16 downto 0):= (others => '0');
+	signal in10_tb : in std_logic_vector(16 downto 0):= (others => '0');
 	
 	signal rst_tb: in std_logic;
 	signal b_tb  : in std_logic_vector(8 downto 0); 
@@ -55,16 +55,16 @@ architecture beh of Adder_Tree_tb is
 		
 		dut: Adder_Tree
 		port map (
-			l1_s1_in1 => l1_s1_in1_tb,
-			l1_s1_in2 => l1_s1_in2_tb,
-			l1_s2_in1 => l1_s2_in1_tb,
-			l1_s2_in2 => l1_s2_in2_tb,
-			l1_s3_in1 => l1_s3_in1_tb,
-			l1_s3_in2 => l1_s3_in2_tb,
-			l1_s4_in1 => l1_s4_in1_tb,
-			l1_s4_in2 => l1_s4_in2_tb,
-			l1_s5_in1 => l1_s5_in1_tb,
-			l1_s5_in2 => l1_s5_in2_tb,
+			l1_s1_in1 => in1_tb,
+			l1_s1_in2 => in2_tb,
+			l1_s2_in1 => in3_tb,
+			l1_s2_in2 => in4_tb,
+			l1_s3_in1 => in5_tb,
+			l1_s3_in2 => in6_tb,
+			l1_s4_in1 => in7_tb,
+			l1_s4_in2 => in8_tb,
+			l1_s5_in1 => in9_tb,
+			l1_s5_in2 => in10_tb,
 			
 			clk => clk,
 			rst => rst_tb,
