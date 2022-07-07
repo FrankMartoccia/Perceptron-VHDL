@@ -1,0 +1,138 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Parallel_Multiplier_tb is  
+end Parallel_Multiplier_tb;
+
+architecture beh of Parallel_Multiplier_tb is
+
+	-- Constants
+
+    constant clk_period     : time := 100 ns; -- Clock period
+	    
+    component Parallel_Multiplier
+        port(
+            -- Values of the vectors x to multiply
+            x_p_0: in std_logic_vector(7 downto 0);
+            x_p_1: in std_logic_vector(7 downto 0);
+            x_p_2: in std_logic_vector(7 downto 0);
+            x_p_3: in std_logic_vector(7 downto 0);
+            x_p_4: in std_logic_vector(7 downto 0);
+            x_p_5: in std_logic_vector(7 downto 0);
+            x_p_6: in std_logic_vector(7 downto 0);
+            x_p_7: in std_logic_vector(7 downto 0);
+            x_p_8: in std_logic_vector(7 downto 0);
+            x_p_9: in std_logic_vector(7 downto 0);
+            
+            -- Values of the vectors w to multiply
+            w_p_0: in std_logic_vector(8 downto 0);
+            w_p_1: in std_logic_vector(8 downto 0);
+            w_p_2: in std_logic_vector(8 downto 0);
+            w_p_3: in std_logic_vector(8 downto 0);
+            w_p_4: in std_logic_vector(8 downto 0);
+            w_p_5: in std_logic_vector(8 downto 0);
+            w_p_6: in std_logic_vector(8 downto 0);
+            w_p_7: in std_logic_vector(8 downto 0);
+            w_p_8: in std_logic_vector(8 downto 0);
+            w_p_9: in std_logic_vector(8 downto 0);
+
+            -- Values of the products
+            p_0 : out std_logic_vector(16 downto 0);
+            p_1 : out std_logic_vector(16 downto 0);
+            p_2 : out std_logic_vector(16 downto 0);
+            p_3 : out std_logic_vector(16 downto 0);
+            p_4 : out std_logic_vector(16 downto 0);
+            p_5 : out std_logic_vector(16 downto 0);
+            p_6 : out std_logic_vector(16 downto 0);
+            p_7 : out std_logic_vector(16 downto 0);
+            p_8 : out std_logic_vector(16 downto 0);
+            p_9 : out std_logic_vector(16 downto 0)
+        );
+    end component Parallel_Multiplier;
+	
+	-- Signals used in the TB 
+
+	signal x_p_0_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_1_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_2_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_3_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_4_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_5_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_6_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_7_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_8_tb  : std_logic_vector(7 downto 0) := (others => '0');
+    signal x_p_9_tb  : std_logic_vector(7 downto 0) := (others => '0');
+
+    signal w_p_0_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_1_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_2_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_3_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_4_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_5_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_6_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_7_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_8_tb  : std_logic_vector(8 downto 0) := (others => '0');
+    signal w_p_9_tb  : std_logic_vector(8 downto 0) := (others => '0');
+
+    signal p_0_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_1_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_2_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_3_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_4_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_5_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_6_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_7_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_8_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_9_tb    : std_logic_vector(16 downto 0) := (others => '0');
+	
+	signal clk     : std_logic := '0';
+	signal testing : boolean := true;
+	
+	begin
+		clk <= not clk after clk_period/2 when testing else '0';
+		
+		-- Definition of the DUT
+
+		dut: Parallel_Multiplier
+		port map (
+			x_p_0 => x_p_0_tb,
+            x_p_1 => x_p_1_tb,
+            x_p_2 => x_p_2_tb,
+            x_p_3 => x_p_3_tb,
+            x_p_4 => x_p_4_tb,
+            x_p_5 => x_p_5_tb,
+            x_p_6 => x_p_6_tb,
+            x_p_7 => x_p_7_tb,
+            x_p_8 => x_p_8_tb,
+            x_p_9 => x_p_9_tb,
+
+			w_p_0 => w_p_0_tb,
+            w_p_1 => w_p_1_tb,
+            w_p_2 => w_p_2_tb,
+            w_p_3 => w_p_3_tb,
+            w_p_4 => w_p_4_tb,
+            w_p_5 => w_p_5_tb,
+            w_p_6 => w_p_6_tb,
+            w_p_7 => w_p_7_tb,
+            w_p_8 => w_p_8_tb,
+            w_p_9 => w_p_9_tb,
+
+			p_0 => p_0_tb,
+            p_1 => p_1_tb,
+            p_2 => p_2_tb,
+            p_3 => p_3_tb,
+            p_4 => p_4_tb,
+            p_5 => p_5_tb,
+            p_6 => p_6_tb,
+            p_7 => p_7_tb,
+            p_8 => p_8_tb,
+            p_9 => p_9_tb
+			);
+			
+		-- Definition of the stimuli to apply to the DUT
+
+		stimulus : process 
+            begin
+                testing  <= false;
+        end process
+end beh;
