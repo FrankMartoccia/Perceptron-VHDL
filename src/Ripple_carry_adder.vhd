@@ -25,37 +25,46 @@ component full_adder is
   );
 end component;
 
-signal carry : std_logic_vector (Nbit - 1 downto 0);
+signal carry : std_logic_vector (Nbit - 1 downto 1);
 
 begin
 
-GEN: for i in 0 to Nbit-1 generate
+GEN: for i in 1 to Nbit generate
 
-	FIRST: if i = 0 generate
+	FIRST_FA: if i = 1 generate
 		FA_1: full_adder 
 			port map (
-				a    => a(i),
-				b    => b(i),
+				a    => a(i-1),
+				b    => b(i-1),
 				cin  => cin,
-				s    => s(i),
+				s    => s(i-1),
 				cout => carry(i)		
 			);
-	end generate FIRST;
+	end generate FIRST_FA;
 	
-	FOLLOWING: if i > 0 and i < Nbit generate
+	INTERNAL_FA: if i > 1 and i < Nbit generate
 		FA_M: full_adder 
 			port map (
-				a    => a(i),
-				b    => b(i),
+				a    => a(i-1),
+				b    => b(i-1),
 				cin  => carry(i-1),
-				s    => s(i),
+				s    => s(i-1),
 				cout => carry(i)		
 			);			
-	end generate FOLLOWING;	
+	end generate INTERNAL_FA;	
+	
+	LAST_FA: if i = Nbit generate
+		FA_LAST: full_adder
+			port map(
+				a    => a(Nbit-2),
+				b    => b(Nbit-2),
+				cin  => carry(Nbit-1),
+				s    => s(Nbit-1),
+				cout => cout
+			);
+	end generate LAST_FA;
 
 end generate GEN;
-
-cout <= carry(Nbit-1);
 
 end beh;
 

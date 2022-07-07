@@ -41,8 +41,8 @@ architecture beh of Adder_Tree is
     component Ripple_carry_adder
         generic (Nbit : positive);
         port (
-          a    : in std_logic_vector(Nbit - 1 downto 0);
-          b    : in std_logic_vector(Nbit - 1 downto 0);
+          a    : in std_logic_vector(Nbit - 2 downto 0);
+          b    : in std_logic_vector(Nbit - 2 downto 0);
           cin  : in std_logic;
           s    : out std_logic_vector (Nbit - 1 downto 0);
           cout : out std_logic
@@ -66,7 +66,7 @@ architecture beh of Adder_Tree is
      -- Output signals for the adders in the second layer
      signal l2_s1_out: std_logic_vector(18 downto 0);
      signal l2_s2_out: std_logic_vector(18 downto 0);
-     signal l2_s3_out: std_logic_vector(18 downto 0);
+     signal l2_s3_out: std_logic_vector(19 downto 0);
      
      -- Input signals for the adders in the third layer
      signal l3_s1_in1: std_logic_vector(18 downto 0);
@@ -79,12 +79,13 @@ architecture beh of Adder_Tree is
      signal l4_s1_in1: std_logic_vector(19 downto 0);
      signal l4_s1_in2: std_logic_vector(19 downto 0);
 
-     signal resized_b: std_logic_vector(17 downto 0);
+     signal resized_b: std_logic_vector(18 downto 0);
+	 signal resized_l2_s3_in1: std_logic_vector(18 downto 0);
 
 begin
 
-    -- Resize of the bias vector
-    resized_b <= std_logic_vector(resize(signed(b), resized_b'length));
+    resized_b <= std_logic_vector(resize(signed(b), resized_b'length)); -- Resize of the bias vector
+	resized_l2_s3_in1 <= std_logic_vector(resize(signed(l2_s3_in1), resized_l2_s3_in1'length)); -- Resize of the l2_s3_in1 vector
 
     -- First layer of adders
     l1_s1: Ripple_carry_adder 
@@ -244,10 +245,10 @@ begin
 
     l2_s3: Ripple_carry_adder 
         generic map(
-            Nbit => 19
+            Nbit => 20
         )
         port map(
-            a => l2_s3_in1,
+            a => resized_l2_s3_in1,
             b => resized_b,
             cin => '0',
             s => l2_s3_out,
@@ -255,7 +256,7 @@ begin
         );
     l2_r3: DFF_N
         generic map(
-            N => 19
+            N => 20
         )
         port map(
             clk => clk,
