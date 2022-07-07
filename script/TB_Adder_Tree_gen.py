@@ -5,7 +5,7 @@ from xml.etree.ElementTree import tostring
 seedValue = 10
 
 x = []
-w = []
+b = ""
 
 def genInputs():
     global seedValue 
@@ -13,27 +13,24 @@ def genInputs():
     random.seed(seedValue)
     l = ""
     for i in range (10):
-        for j in range (8):
+        for j in range (17):
             l += str(random.randint(0,1))
         x.append(l) 
         l = ""
+    for _ in range(9):
+        global b
+        b += str(random.randint(0,1))
 
-    for i in range (10):
-        for j in range (9):
-            l += str(random.randint(0,1))
-        w.append(l) 
-        l = ""
+sys.stdout = open("./Adder_Tree_tb.vhd", "w")
 
-sys.stdout = open("./Parallel_Multiplier_tb.vhd", "w")
-
-for line in open("./Parallel_Multiplier.txt"):
-
+for line in open("./Adder_Tree.txt"):
     if "testing  <= false;" in line:
         for i in range(10): 
             genInputs()
             for j in range(10):
-                print(f"\t\t\t\tx_p_{j}_tb <= \"{x[j]}\";") 
-                print(f"\t\t\t\tw_p_{j}_tb <= \"{w[j]}\";") 
+                print(f"\t\t\t\tin{j+1}_tb  <= \"{x[j]}\";") 
+            print(f"\t\t\t\tb_tb <= \"{b}\";")
+            b = "" 
             print("\t\t\t\twait for 400 ns;") 
             x = []
             w = []
