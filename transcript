@@ -2,11 +2,12 @@
 # Compile of DFF_N.vhd was successful.
 # Compile of FULL_ADDER.vhd was successful.
 # Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd failed with 1 errors.
+# Compile of Parallel_Multiplier.vhd was successful.
 # Compile of Ripple_carry_adder.vhd was successful.
 # Compile of Signed_Parallel_Multiplier.vhd was successful.
 # Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# 8 compiles, 1 failed with 1 error.
+# 8 compiles, 0 failed with no errors.
+project addfile tb/Parallel_Multiplier_tb.vhd
 # Compile of DFF.vhd was successful.
 # Compile of DFF_N.vhd was successful.
 # Compile of FULL_ADDER.vhd was successful.
@@ -15,4 +16,67 @@
 # Compile of Ripple_carry_adder.vhd was successful.
 # Compile of Signed_Parallel_Multiplier.vhd was successful.
 # Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# 8 compiles, 0 failed with no errors.
+# Compile of Parallel_Multiplier_tb.vhd failed with 1 errors.
+# 9 compiles, 1 failed with 1 error.
+# Compile of DFF.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of FULL_ADDER.vhd was successful.
+# Compile of HALF_ADDER.vhd was successful.
+# Compile of Parallel_Multiplier.vhd was successful.
+# Compile of Ripple_carry_adder.vhd was successful.
+# Compile of Signed_Parallel_Multiplier.vhd was successful.
+# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
+# Compile of Parallel_Multiplier_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.parallel_multiplier_tb
+# vsim -gui work.parallel_multiplier_tb 
+# Start time: 12:23:20 on Jul 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.parallel_multiplier_tb(beh)
+# Loading work.parallel_multiplier(beh)
+# Loading ieee.numeric_std(body)
+# Loading work.signed_parallel_multiplier(beh)
+# Loading work.unsigned_parallel_multiplier(beh)
+# Loading work.half_adder(dataflow)
+# Loading work.full_adder(dataflow)
+add wave -position insertpoint  \
+sim:/parallel_multiplier_tb/x_p_0_tb \
+sim:/parallel_multiplier_tb/x_p_1_tb \
+sim:/parallel_multiplier_tb/x_p_2_tb \
+sim:/parallel_multiplier_tb/x_p_3_tb \
+sim:/parallel_multiplier_tb/x_p_4_tb \
+sim:/parallel_multiplier_tb/x_p_5_tb \
+sim:/parallel_multiplier_tb/x_p_6_tb \
+sim:/parallel_multiplier_tb/x_p_7_tb \
+sim:/parallel_multiplier_tb/x_p_8_tb \
+sim:/parallel_multiplier_tb/x_p_9_tb \
+sim:/parallel_multiplier_tb/w_p_0_tb \
+sim:/parallel_multiplier_tb/w_p_1_tb \
+sim:/parallel_multiplier_tb/w_p_2_tb \
+sim:/parallel_multiplier_tb/w_p_3_tb \
+sim:/parallel_multiplier_tb/w_p_4_tb \
+sim:/parallel_multiplier_tb/w_p_5_tb \
+sim:/parallel_multiplier_tb/w_p_6_tb \
+sim:/parallel_multiplier_tb/w_p_7_tb \
+sim:/parallel_multiplier_tb/w_p_8_tb \
+sim:/parallel_multiplier_tb/w_p_9_tb \
+sim:/parallel_multiplier_tb/p_0_tb \
+sim:/parallel_multiplier_tb/p_1_tb \
+sim:/parallel_multiplier_tb/p_2_tb \
+sim:/parallel_multiplier_tb/p_3_tb \
+sim:/parallel_multiplier_tb/p_4_tb \
+sim:/parallel_multiplier_tb/p_5_tb \
+sim:/parallel_multiplier_tb/p_6_tb \
+sim:/parallel_multiplier_tb/p_7_tb \
+sim:/parallel_multiplier_tb/p_8_tb \
+sim:/parallel_multiplier_tb/p_9_tb \
+sim:/parallel_multiplier_tb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: SalvatoreL  Hostname: DESKTOP-SQJHPFJ  ProcessID: 6072
+#           Attempting to use alternate WLF file "./wlftxi4v03".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxi4v03
+# Load canceled
+run -all

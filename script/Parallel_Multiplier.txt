@@ -134,5 +134,5 @@ architecture beh of Parallel_Multiplier_tb is
 		stimulus : process 
             begin
                 testing  <= false;
-        end process
+        end process;
 end beh;

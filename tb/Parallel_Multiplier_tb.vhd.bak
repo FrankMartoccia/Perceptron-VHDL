@@ -344,5 +344,5 @@ architecture beh of Parallel_Multiplier_tb is
 				w_p_9_tb <= "010110011";
 				wait for 400 ns;
                 testing  <= false;
-        end process;
+        end process
 end beh;
