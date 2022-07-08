@@ -21,7 +21,7 @@ architecture beh of LUT_4096_tb is
 	-- Signals used in the TB 
 
     signal address_tb : std_logic_vector(12 downto 0) := (others => '0');
-    signal sigmoid_out_tb : std_logic_vector(15 downto 0) := (others => '0'); 
+    signal sigmoid_out_tb : std_logic_vector(15 downto 0); 
 	signal address_value_tb : integer range 0 to 4096 := 0;
 	
 	signal clk     : std_logic := '0';
