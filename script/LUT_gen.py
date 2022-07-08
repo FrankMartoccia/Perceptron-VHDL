@@ -33,7 +33,7 @@ out_file.write("\n")
 out_file.write(f"entity {fname} is\n")
 out_file.write("	port (\n")
 out_file.write("		address : in  std_logic_vector(" + str(n_in-1) + " downto 0);\n")
-out_file.write("		dds_out : out std_logic_vector(" + str(n_out-1) + " downto 0) \n")
+out_file.write("		sigmoid_out : out std_logic_vector(" + str(n_out-1) + " downto 0) \n")
 out_file.write("	);\n")
 out_file.write(f"end {fname};\n") 
 out_file.write("\n")
@@ -51,7 +51,7 @@ out_file.write(");\n")
 out_file.write("\n")
 out_file.write("begin\n")
 
-out_file.write("	dds_out <= std_logic_vector(TO_SIGNED(LUT(TO_INTEGER(unsigned(address)))," + str(n_out) + "));\n")
+out_file.write("	sigmoid_out <= std_logic_vector(TO_SIGNED(LUT(TO_INTEGER(unsigned(address)))," + str(n_out) + "));\n")
 
 out_file.write("end beh;\n")
 
