@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 entity LUT_4096 is
 	port (
 		address : in  std_logic_vector(12 downto 0);
-		dds_out : out std_logic_vector(15 downto 0) 
+		sigmoid_out : out std_logic_vector(15 downto 0) 
 	);
 end LUT_4096;
 
@@ -4111,5 +4111,5 @@ architecture beh of LUT_4096 is
 );
 
 begin
-	dds_out <= std_logic_vector(TO_SIGNED(LUT(TO_INTEGER(unsigned(address))),16));
+	sigmoid_out <= std_logic_vector(TO_SIGNED(LUT(TO_INTEGER(unsigned(address))),16));
 end beh;
