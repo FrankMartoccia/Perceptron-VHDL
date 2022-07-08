@@ -178,7 +178,6 @@ architecture beh of Perceptron is
 	
 begin
 	
-	
     lut_process: process(s_r3_out, s_lut_out)
     begin
 		-- The 2's complement is needed if the input of the LUT is negative
@@ -194,7 +193,7 @@ begin
         else
             s_out <= std_logic_vector(32766 - unsigned(s_lut_out));
         end if;
-    end process lut_process;	
+    end process;	
 	
 	-- Registers of the first layer
 	-- Registers of the x input vectors
