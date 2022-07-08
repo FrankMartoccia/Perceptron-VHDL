@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 entity LUT_4096 is
 	port (
-		address : in  std_logic_vector(11 downto 0);
+		address : in  std_logic_vector(12 downto 0);
 		sigmoid_out : out std_logic_vector(15 downto 0) 
 	);
 end LUT_4096;

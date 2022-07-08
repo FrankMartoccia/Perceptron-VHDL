@@ -116,7 +116,7 @@ architecture beh of Perceptron is
 	-- Look Up table
 	component LUT_4096 is
 		port (
-			address : in  std_logic_vector(11 downto 0);
+			address : in  std_logic_vector(12 downto 0);
 			sigmoid_out : out std_logic_vector(15 downto 0) 
 		);
 	end component LUT_4096;
@@ -611,7 +611,7 @@ begin
 
 	LUT: LUT_4096
 		port map(
-			address => s_lut_in(20 downto 9),
+			address => s_lut_in(20 downto 8),
 			sigmoid_out => s_lut_out
 		);
 end beh;	
