@@ -44,9 +44,9 @@ architecture beh of Adder_Tree_tb is
 	signal in10_tb : std_logic_vector(16 downto 0):= (others => '0');
 	
 	signal rst_tb : std_logic := '0';
-	signal b_tb   : std_logic_vector(8 downto 0); 
+	signal b_tb   : std_logic_vector(8 downto 0):= (others => '0'); 
         
-	signal sum_tb : std_logic_vector(20 downto 0):= (others => '0');
+	signal sum_tb : std_logic_vector(20 downto 0);
 	
 	signal clk     : std_logic := '0';
 	signal testing : boolean := true;

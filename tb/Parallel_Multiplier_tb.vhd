@@ -74,16 +74,16 @@ architecture beh of Parallel_Multiplier_tb is
     signal w_p_8_tb  : std_logic_vector(8 downto 0) := (others => '0');
     signal w_p_9_tb  : std_logic_vector(8 downto 0) := (others => '0');
 
-    signal p_0_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_1_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_2_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_3_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_4_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_5_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_6_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_7_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_8_tb    : std_logic_vector(16 downto 0) := (others => '0');
-    signal p_9_tb    : std_logic_vector(16 downto 0) := (others => '0');
+    signal p_0_tb    : std_logic_vector(16 downto 0);
+    signal p_1_tb    : std_logic_vector(16 downto 0);
+    signal p_2_tb    : std_logic_vector(16 downto 0);
+    signal p_3_tb    : std_logic_vector(16 downto 0);
+    signal p_4_tb    : std_logic_vector(16 downto 0);
+    signal p_5_tb    : std_logic_vector(16 downto 0);
+    signal p_6_tb    : std_logic_vector(16 downto 0);
+    signal p_7_tb    : std_logic_vector(16 downto 0);
+    signal p_8_tb    : std_logic_vector(16 downto 0);
+    signal p_9_tb    : std_logic_vector(16 downto 0);
 	
 	signal clk     : std_logic := '0';
 	signal testing : boolean := true;

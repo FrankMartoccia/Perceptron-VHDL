@@ -29,7 +29,7 @@ architecture beh of Unsigned_Parallel_Multiplier_tb is
 
 	signal x_tb    : std_logic_vector(Nbit_x-1 downto 0) := (others => '0');
     signal w_tb    : std_logic_vector(Nbit_w-1 downto 0) := (others => '0');
-    signal p_tb    : std_logic_vector((Nbit_x) + (Nbit_w)-1 downto 0) := (others => '0');
+    signal p_tb    : std_logic_vector((Nbit_x) + (Nbit_w)-1 downto 0);
 	
 	signal clk     : std_logic := '0';
 	signal testing : boolean := true;
@@ -54,8 +54,6 @@ architecture beh of Unsigned_Parallel_Multiplier_tb is
 
 		stimulus : process 
 			begin
-				x_tb <= (others => '0');
-				w_tb <= (others => '0');
 				wait for 200 ns;
 				x_tb <= "00000101";
 				w_tb <= "000000011";
