@@ -4,7 +4,6 @@ use ieee.numeric_std.all;
 
 entity Adder_Tree is 
     port(
-        
         -- Values of the products that have to be summed
         l1_s1_in1 : in std_logic_vector(16 downto 0);
         l1_s1_in2 : in std_logic_vector(16 downto 0);
