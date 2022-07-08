@@ -6,31 +6,25 @@
 # Compile of Ripple_carry_adder.vhd was successful.
 # Compile of Signed_Parallel_Multiplier.vhd was successful.
 # Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# 8 compiles, 0 failed with no errors.
-project addfile tb/Parallel_Multiplier_tb.vhd
-# Compile of DFF.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of FULL_ADDER.vhd was successful.
-# Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd was successful.
-# Compile of Ripple_carry_adder.vhd was successful.
-# Compile of Signed_Parallel_Multiplier.vhd was successful.
-# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# Compile of Parallel_Multiplier_tb.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error.
-# Compile of DFF.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of FULL_ADDER.vhd was successful.
-# Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd was successful.
-# Compile of Ripple_carry_adder.vhd was successful.
-# Compile of Signed_Parallel_Multiplier.vhd was successful.
-# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
 # Compile of Parallel_Multiplier_tb.vhd was successful.
-# 9 compiles, 0 failed with no errors.
+# Compile of Adder_Tree_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.adder_tree_tb
+# vsim -gui work.adder_tree_tb 
+# Start time: 15:35:57 on Jul 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adder_tree_tb(beh)
+# ** Warning: (vsim-3473) Component instance "dut : Adder_Tree" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tree_tb File: C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/Adder_Tree_tb.vhd
+quit -sim
+# End time: 15:37:05 on Jul 07,2022, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 3
 vsim -gui work.parallel_multiplier_tb
 # vsim -gui work.parallel_multiplier_tb 
-# Start time: 12:23:20 on Jul 07,2022
+# Start time: 15:37:15 on Jul 07,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -41,6 +35,97 @@ vsim -gui work.parallel_multiplier_tb
 # Loading work.unsigned_parallel_multiplier(beh)
 # Loading work.half_adder(dataflow)
 # Loading work.full_adder(dataflow)
+quit -sim
+# End time: 15:37:45 on Jul 07,2022, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 1
+vsim -gui work.adder_tree_tb
+# vsim -gui work.adder_tree_tb 
+# Start time: 15:38:06 on Jul 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adder_tree_tb(beh)
+# ** Warning: (vsim-3473) Component instance "dut : Adder_Tree" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tree_tb File: C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/Adder_Tree_tb.vhd
+add wave -position insertpoint  \
+sim:/adder_tree_tb/in1_tb \
+sim:/adder_tree_tb/in2_tb \
+sim:/adder_tree_tb/in3_tb \
+sim:/adder_tree_tb/in4_tb \
+sim:/adder_tree_tb/in5_tb \
+sim:/adder_tree_tb/in6_tb \
+sim:/adder_tree_tb/in7_tb \
+sim:/adder_tree_tb/in8_tb \
+sim:/adder_tree_tb/in9_tb \
+sim:/adder_tree_tb/in10_tb \
+sim:/adder_tree_tb/rst_tb \
+sim:/adder_tree_tb/b_tb \
+sim:/adder_tree_tb/sum_tb \
+sim:/adder_tree_tb/clk \
+sim:/adder_tree_tb/testing
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: SalvatoreL  Hostname: DESKTOP-SQJHPFJ  ProcessID: 6072
+#           Attempting to use alternate WLF file "./wlft16e2ah".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft16e2ah
+run -all
+add wave -position insertpoint sim:/adder_tree_tb/line__55/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/line__55/*'.
+add wave -position insertpoint sim:/adder_tree_tb/line__56/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/line__56/*'.
+add wave -position insertpoint sim:/adder_tree_tb/stimulus/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/stimulus/*'.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "dut : Adder_Tree" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_tree_tb File: C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/Adder_Tree_tb.vhd
+add wave -position insertpoint sim:/adder_tree_tb/line__55/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/line__55/*'.
+add wave -position insertpoint sim:/adder_tree_tb/line__55/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/line__55/*'.
+add wave -position insertpoint sim:/adder_tree_tb/line__56/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/line__56/*'.
+add wave -position insertpoint sim:/adder_tree_tb/stimulus/*
+# (vish-4014) No objects found matching 'sim:/adder_tree_tb/stimulus/*'.
+# Compile of DFF.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of FULL_ADDER.vhd was successful.
+# Compile of HALF_ADDER.vhd was successful.
+# Compile of Parallel_Multiplier.vhd was successful.
+# Compile of Ripple_carry_adder.vhd was successful.
+# Compile of Signed_Parallel_Multiplier.vhd was successful.
+# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
+# Compile of Parallel_Multiplier_tb.vhd was successful.
+# Compile of Adder_Tree_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+quit -sim
+# End time: 15:48:57 on Jul 07,2022, Elapsed time: 0:10:51
+# Errors: 0, Warnings: 3
+# Compile of DFF.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of FULL_ADDER.vhd was successful.
+# Compile of HALF_ADDER.vhd was successful.
+# Compile of Parallel_Multiplier.vhd was successful.
+# Compile of Ripple_carry_adder.vhd was successful.
+vsim -gui work.parallel_multiplier_tb
+# vsim -gui work.parallel_multiplier_tb 
+# Start time: 17:20:18 on Jul 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.parallel_multiplier_tb(beh)
+# Loading work.parallel_multiplier(beh)
+# Loading ieee.numeric_std(body)
+# Loading work.signed_parallel_multiplier(beh)
+# Loading work.unsigned_parallel_multiplier(beh)
+# Loading work.half_adder(dataflow)
+# Loading work.full_adder(dataflow)
+# Compile of Signed_Parallel_Multiplier.vhd was successful.
+# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
+# Compile of Parallel_Multiplier_tb.vhd was successful.
+# Compile of Adder_Tree_tb.vhd was successful.
+# 10 compiles, 0 failed with no errors.
 add wave -position insertpoint  \
 sim:/parallel_multiplier_tb/x_p_0_tb \
 sim:/parallel_multiplier_tb/x_p_1_tb \
@@ -72,11 +157,14 @@ sim:/parallel_multiplier_tb/p_6_tb \
 sim:/parallel_multiplier_tb/p_7_tb \
 sim:/parallel_multiplier_tb/p_8_tb \
 sim:/parallel_multiplier_tb/p_9_tb \
-sim:/parallel_multiplier_tb/clk
+sim:/parallel_multiplier_tb/clk \
+sim:/parallel_multiplier_tb/testing \
+sim:/parallel_multiplier_tb/clk_period
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: SalvatoreL  Hostname: DESKTOP-SQJHPFJ  ProcessID: 6072
-#           Attempting to use alternate WLF file "./wlftxi4v03".
+#           Attempting to use alternate WLF file "./wlftckv6wc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftxi4v03
-# Load canceled
+#           Using alternate file: ./wlftckv6wc
 run -all
+# End time: 18:00:43 on Jul 07,2022, Elapsed time: 0:40:25
+# Errors: 0, Warnings: 4
