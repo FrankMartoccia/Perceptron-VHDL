@@ -13,14 +13,14 @@ architecture beh of LUT_4096_tb is
 	
 	component LUT_4096
 	port (
-		address : in  std_logic_vector(12 downto 0);
+		address : in  std_logic_vector(11 downto 0);
 		sigmoid_out : out std_logic_vector(15 downto 0) 
 	);
 	end component LUT_4096;
 	
 	-- Signals used in the TB 
 
-    signal address_tb : std_logic_vector(12 downto 0) := (others => '0');
+    signal address_tb : std_logic_vector(11 downto 0) := (others => '0');
     signal sigmoid_out_tb : std_logic_vector(15 downto 0); 
 	signal address_value_tb : integer range 0 to 4096 := 0;
 	
@@ -44,7 +44,7 @@ architecture beh of LUT_4096_tb is
 			begin
 				wait for 200 ns;
 				for i in 0 to 4095 loop
-					address_tb <= std_logic_vector(to_unsigned(address_value_tb, 13));
+					address_tb <= std_logic_vector(to_unsigned(address_value_tb, 12));
 					address_value_tb <= address_value_tb + 1;
 					wait for 400 ns;
 				end loop;
