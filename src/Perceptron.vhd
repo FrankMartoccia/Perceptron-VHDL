@@ -610,7 +610,7 @@ begin
 
 	LUT: LUT_4096
 		port map(
-			address => s_lut_in(20 downto 9),
+			address => s_lut_in(18 downto 7),
 			sigmoid_out => s_lut_out
 		);
 end beh;	

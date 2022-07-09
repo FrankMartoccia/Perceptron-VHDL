@@ -83,7 +83,6 @@ architecture beh of Adder_Tree is
 
 begin
 
-    resized_b <= std_logic_vector(resize(signed(b), resized_b'length)); -- Resize of the bias vector
 	resized_l2_s3_in1 <= std_logic_vector(resize(signed(l2_s3_in1), resized_l2_s3_in1'length)); -- Resize of the l2_s3_in1 vector
 
     -- First layer of adders
@@ -248,7 +247,11 @@ begin
         )
         port map(
             a => resized_l2_s3_in1,
-            b => resized_b,
+            b(6 downto 0) => "0000000",
+			b(15 downto 7) => b,
+			b(16) => b(8),
+			b(17) => b(8),
+			b(18) => b(8),
             cin => '0',
             s => l2_s3_out,
             cout => open
