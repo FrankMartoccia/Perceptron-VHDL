@@ -1,6 +1,5 @@
 import random
 import sys
-from xml.etree.ElementTree import tostring  
 
 seedValue = 10
 
