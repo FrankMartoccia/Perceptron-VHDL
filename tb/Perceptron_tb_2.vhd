@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity Perceptron_tb_1 is 
-end entity Perceptron_tb_1;
+entity Perceptron_tb_2 is 
+end entity Perceptron_tb_2;
 
-architecture beh of Perceptron_tb_1 is 
+architecture beh of Perceptron_tb_2 is 
 	
 	-- Constants
 	
@@ -46,27 +46,27 @@ architecture beh of Perceptron_tb_1 is
 		);
 	end component Perceptron;
 	
-	signal x_0_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_1_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_2_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_3_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_4_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_5_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_6_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_7_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_8_tb : std_logic_vector(7 downto 0) := (others => '0');
-	signal x_9_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_0_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_1_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_2_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_3_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_4_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_5_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_6_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_7_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_8_tb : std_logic_vector(7 downto 0) := "01111111";
+	signal x_9_tb : std_logic_vector(7 downto 0) := "01111111";
 	
-	signal w_0_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_1_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_2_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_3_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_4_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_5_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_6_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_7_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_8_tb : std_logic_vector(8 downto 0) := (others => '0');
-	signal w_9_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_0_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_1_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_2_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_3_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_4_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_5_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_6_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_7_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_8_tb : std_logic_vector(8 downto 0) := "011111111";
+	signal w_9_tb : std_logic_vector(8 downto 0) := "011111111";
 	
 	signal b_tb   : std_logic_vector(8 downto 0) := (others => '0');
 

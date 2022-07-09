@@ -1,112 +1,19 @@
-# Compile of DFF_N.vhd was successful.
 # Compile of FULL_ADDER.vhd was successful.
 # Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd was successful.
-# Compile of Ripple_carry_adder.vhd was successful.
-# Compile of Signed_Parallel_Multiplier.vhd was successful.
 # Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# Compile of Parallel_Multiplier_tb.vhd was successful.
-# Compile of Adder_Tree_tb.vhd was successful.
-# 9 compiles, 1 failed with no errors.
-project addfile src/Perceptron.vhd
-project addfile src/LUT_4096.vhd
-project addfile tb/LUT_4096_tb.vhd
+# Compile of Signed_Parallel_Multiplier.vhd was successful.
+# Compile of Signed_Parallel_Multiplier_tb.vhd was successful.
+# Compile of Unsigned_Parallel_Multiplier_tb.vhd was successful.
 # Compile of DFF_N.vhd was successful.
-# Compile of FULL_ADDER.vhd was successful.
-# Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd was successful.
+# Compile of Adder_Tree.vhd was successful.
 # Compile of Ripple_carry_adder.vhd was successful.
-# Compile of Signed_Parallel_Multiplier.vhd was successful.
-# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
 # Compile of Parallel_Multiplier_tb.vhd was successful.
 # Compile of Adder_Tree_tb.vhd was successful.
-# Compile of Perceptron.vhd was successful.
+# Compile of Parallel_Multiplier.vhd was successful.
 # Compile of LUT_4096.vhd was successful.
 # Compile of LUT_4096_tb.vhd was successful.
-# 12 compiles, 1 failed with no errors.
-vsim -gui work.lut_4096_tb
-# vsim -gui work.lut_4096_tb 
-# Start time: 22:43:41 on Jul 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.lut_4096_tb(beh)
-# Loading work.lut_4096(beh)
-add wave -position insertpoint  \
-sim:/lut_4096_tb/address_tb \
-sim:/lut_4096_tb/sigmoid_out_tb \
-sim:/lut_4096_tb/address_value_tb \
-sim:/lut_4096_tb/clk
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: SalvatoreL  Hostname: DESKTOP-SQJHPFJ  ProcessID: 6072
-#           Attempting to use alternate WLF file "./wlftb3tsj9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftb3tsj9
-run -all
-# ** Fatal: (vsim-3421) Value 4097 is out of range 0 to 4096.
-#    Time: 1638800 ns  Iteration: 0  Process: /lut_4096_tb/stimulus File: C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/LUT_4096_tb.vhd Line: 48
-# Fatal error in ForLoop loop at C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/LUT_4096_tb.vhd line 48
-# 
-# HDL call sequence:
-# Stopped at C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/LUT_4096_tb.vhd 48 ForLoop loop
-# 
-# Break key hit
-# Compile of DFF_N.vhd was successful.
-# Compile of FULL_ADDER.vhd was successful.
-# Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd was successful.
-# Compile of Ripple_carry_adder.vhd was successful.
-# Compile of Signed_Parallel_Multiplier.vhd was successful.
-# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# Compile of Parallel_Multiplier_tb.vhd was successful.
-# Compile of Adder_Tree_tb.vhd was successful.
 # Compile of Perceptron.vhd was successful.
-# Compile of LUT_4096.vhd was successful.
-# Compile of LUT_4096_tb.vhd was successful.
-# 12 compiles, 1 failed with no errors.
-# Load canceled
-# Compile of DFF_N.vhd was successful.
-# Compile of FULL_ADDER.vhd was successful.
-# Compile of HALF_ADDER.vhd was successful.
-# Compile of Parallel_Multiplier.vhd was successful.
-# Compile of Ripple_carry_adder.vhd was successful.
-# Compile of Signed_Parallel_Multiplier.vhd was successful.
-# Compile of Unsigned_Parallel_Multiplier.vhd was successful.
-# Compile of Parallel_Multiplier_tb.vhd was successful.
-# Compile of Adder_Tree_tb.vhd was successful.
-# Compile of Perceptron.vhd was successful.
-# Compile of LUT_4096.vhd was successful.
-# Compile of LUT_4096_tb.vhd was successful.
-# 12 compiles, 1 failed with no errors.
-vsim -gui work.lut_4096_tb
-# End time: 22:50:54 on Jul 08,2022, Elapsed time: 0:07:13
-# Errors: 1, Warnings: 10
-# vsim -gui work.lut_4096_tb 
-# Start time: 22:50:54 on Jul 08,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.lut_4096_tb(beh)
-# Loading work.lut_4096(beh)
-add wave -position insertpoint  \
-sim:/lut_4096_tb/address_tb \
-sim:/lut_4096_tb/sigmoid_out_tb \
-sim:/lut_4096_tb/address_value_tb \
-sim:/lut_4096_tb/clk
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: SalvatoreL  Hostname: DESKTOP-SQJHPFJ  ProcessID: 6072
-#           Attempting to use alternate WLF file "./wlftmg27cz".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmg27cz
-run -all
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1638800 ns  Iteration: 0  Instance: /lut_4096_tb
-# ** Fatal: (vsim-3421) Value 4097 is out of range 0 to 4096.
-#    Time: 1638800 ns  Iteration: 0  Process: /lut_4096_tb/stimulus File: C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/LUT_4096_tb.vhd Line: 48
-# Fatal error in ForLoop loop at C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/LUT_4096_tb.vhd line 48
-# 
-# HDL call sequence:
-# Stopped at C:/Users/SalvatoreL/Documents/GitHub/Perceptron-VHDL/tb/LUT_4096_tb.vhd 48 ForLoop loop
-# 
+# Compile of Perceptron_tb_1.vhd was successful.
+# Compile of Perceptron_tb_2.vhd was successful.
+# Compile of Perceptron_tb_3.vhd was successful.
+# 18 compiles, 0 failed with no errors.

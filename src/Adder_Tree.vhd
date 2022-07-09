@@ -78,7 +78,6 @@ architecture beh of Adder_Tree is
      signal l4_s1_in1: std_logic_vector(19 downto 0);
      signal l4_s1_in2: std_logic_vector(19 downto 0);
 
-     signal resized_b: std_logic_vector(18 downto 0);
 	 signal resized_l2_s3_in1: std_logic_vector(18 downto 0);
 
 begin
