@@ -13,16 +13,16 @@ def genResults(x, w, b, n):
     out_file.write("\tb:" + str(b))
 
     sum_result = addition(x, w, b)
-    out_file.write(f"\n\nSum result:\t\t {sum_result}")
+    out_file.write(f"\n\nSum:\t\t {sum_result}")
 
     sum_quantized = round(sum_result/LSB_in)
-    out_file.write(f"\n\nSum value quantized:\t {sum_quantized}")
+    out_file.write(f"\n\nQuantized sum:\t {sum_quantized}")
 
     s_out = s_output(sum_result)
     out_file.write(f"\n\nSigmoid output:\t {s_out}")
 
     s_out_quantized = round(s_out/LSB_out)
-    out_file.write(f"\n\nOutput value quantized:\t {s_out_quantized}\n\n")
+    out_file.write(f"\n\nQuantized sigmoid output:\t {s_out_quantized}\n\n")
 
     out_file.write("-" * 150 + "\n\n")
 
