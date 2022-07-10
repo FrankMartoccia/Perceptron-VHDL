@@ -244,7 +244,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "011111111";
 				w_9_tb <= "011111111";
 				b_tb   <= "011111111";
-				wait for 400 ns;
+				wait for 1500 ns;
 				testing <= false;
 		end process;
 end beh;
