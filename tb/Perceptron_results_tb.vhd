@@ -46,31 +46,31 @@ architecture beh of Perceptron_results_tb is
 		);
 	end component Perceptron;
 	
-	-- Values of the vectors x of the Test 1
-	signal x_0_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_1_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_2_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_3_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_4_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_5_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_6_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_7_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_8_tb : std_logic_vector(7 downto 0) := "01111111";
-	signal x_9_tb : std_logic_vector(7 downto 0) := "01111111";
+	-- Values of the vectors x
+	signal x_0_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_1_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_2_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_3_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_4_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_5_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_6_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_7_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_8_tb : std_logic_vector(7 downto 0) := (others => '0');
+	signal x_9_tb : std_logic_vector(7 downto 0) := (others => '0');
 	
-	-- Values of the vectors w of the Test 1
-	signal w_0_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_1_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_2_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_3_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_4_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_5_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_6_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_7_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_8_tb : std_logic_vector(8 downto 0) := "100000001";
-	signal w_9_tb : std_logic_vector(8 downto 0) := "100000001";
+	-- Values of the vectors w 
+	signal w_0_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_1_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_2_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_3_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_4_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_5_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_6_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_7_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_8_tb : std_logic_vector(8 downto 0) := (others => '0');
+	signal w_9_tb : std_logic_vector(8 downto 0) := (others => '0');
 	
-	signal b_tb   : std_logic_vector(8 downto 0) := "100000001";
+	signal b_tb   : std_logic_vector(8 downto 0) := (others => '0');
 
 	signal s_out_tb : std_logic_vector(15 downto 0);
 
@@ -115,8 +115,31 @@ architecture beh of Perceptron_results_tb is
 		
 		process_bias: process
 			begin
-				-- Test 1
 				wait for 400 ns;
+				-- Test 1
+				x_0_tb <= "01111111";
+				x_1_tb <= "01111111";
+				x_2_tb <= "01111111";
+				x_3_tb <= "01111111";
+				x_4_tb <= "01111111";
+				x_5_tb <= "01111111";
+				x_6_tb <= "01111111";
+				x_7_tb <= "01111111";
+				x_8_tb <= "01111111";
+				x_9_tb <= "01111111";			
+				
+				w_0_tb <= "100000001";
+				w_1_tb <= "100000001";
+				w_2_tb <= "100000001";
+				w_3_tb <= "100000001";
+				w_4_tb <= "100000001";
+				w_5_tb <= "100000001";
+				w_6_tb <= "100000001";
+				w_7_tb <= "100000001";
+				w_8_tb <= "100000001";
+				w_9_tb <= "100000001";
+				b_tb   <= "100000001";
+				wait for 1000 ns;
 				-- Test 2
 				w_0_tb <= "100110100";
 				w_1_tb <= "100110100";
@@ -128,8 +151,9 @@ architecture beh of Perceptron_results_tb is
 				w_7_tb <= "100110100";
 				w_8_tb <= "100110100";
 				w_9_tb <= "100110100";
+				
 				b_tb   <= "100000001";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 3
 				w_0_tb <= "110000000";
 				w_1_tb <= "110000000";
@@ -142,7 +166,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "110000000";
 				w_9_tb <= "110000000";
 				b_tb   <= "110000000";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 4
 				w_0_tb <= "111000000";
 				w_1_tb <= "111000000";
@@ -155,7 +179,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "111000000";
 				w_9_tb <= "111000000";
 				b_tb   <= "111000000";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 5
 				w_0_tb <= "000000000";
 				w_1_tb <= "000000000";
@@ -168,7 +192,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "000000000";
 				w_9_tb <= "000000000";
 				b_tb   <= "000000000";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 6
 				w_0_tb <= "001000000";
 				w_1_tb <= "001000000";
@@ -181,7 +205,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "001000000";
 				w_9_tb <= "001000000";
 				b_tb   <= "001000000";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 7
 				w_0_tb <= "010000000";
 				w_1_tb <= "010000000";
@@ -194,7 +218,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "010000000";
 				w_9_tb <= "010000000";
 				b_tb   <= "010000000";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 8
 				w_0_tb <= "011001100";
 				w_1_tb <= "011001100";
@@ -207,7 +231,7 @@ architecture beh of Perceptron_results_tb is
 				w_8_tb <= "011001100";
 				w_9_tb <= "011001100";
 				b_tb   <= "011111111";
-				wait for 400 ns;
+				wait for 1000 ns;
 				-- Test 9
 				w_0_tb <= "011111111";
 				w_1_tb <= "011111111";
