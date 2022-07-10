@@ -11,15 +11,18 @@ while n_out < 1:
 	print ("WARNING: Insert positive integer")
 	int(input('Number of bits of the output: '))
 
-lsb_out = 1 / (2 ** (n_out - 1) - 1)
-lsb_in = 11 / (2 ** (n_in - 1) - 1)
+lut_lines = int(input('Number of elements of the LUT: '))
+while lut_lines < 1:
+	print ("WARNING: Insert positive integer")
+	int(input('Number of lines of the LUT: '))
 
-lut_lines = 2 ** (n_in - 1)
+lsb_out = 1 / (2 ** (n_out - 1) - 1)
+lsb_in = 16 / (2 ** (n_in) - 1)
 
 f = list(range(lut_lines))
 
 for i in range(lut_lines):
-    y = (1) / (1 + math.exp(-(i * lsb_in)))
+    y = 1 / (1 + math.exp(-(i * lsb_in)))
     f[i] = round(y / lsb_out)
 
 fname = f"LUT_{lut_lines}"
@@ -32,7 +35,7 @@ out_file.write("use IEEE.numeric_std.all;\n")
 out_file.write("\n")
 out_file.write(f"entity {fname} is\n")
 out_file.write("	port (\n")
-out_file.write("		address : in  std_logic_vector(" + str(n_in-2) + " downto 0);\n")
+out_file.write("		address : in  std_logic_vector(" + str(n_in-1) + " downto 0);\n")
 out_file.write("		sigmoid_out : out std_logic_vector(" + str(n_out-1) + " downto 0) \n")
 out_file.write("	);\n")
 out_file.write(f"end {fname};\n") 

@@ -2,7 +2,7 @@ import math
 import sys
 
 LSB_out = 1 / (2 ** 15 - 1)
-LSB_in = 11 / (2 ** 12 - 1)
+LSB_in = 11 / (2 ** 11 - 1)
 
 out_file = open(f"Results.txt", "w")
 

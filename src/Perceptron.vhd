@@ -191,7 +191,7 @@ begin
         if (s_r3_out(20) = '0') then 
             s_out <= std_logic_vector(unsigned(s_lut_out));
         else
-            s_out <= std_logic_vector(32766 - unsigned(s_lut_out));
+            s_out <= std_logic_vector(32767 - unsigned(s_lut_out));
         end if;
     end process;	
 	
