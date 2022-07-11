@@ -1,0 +1,470 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 11 23:45:47 2022
+# Process ID: 10388
+# Current directory: C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/vivado/Perceptron-VHDL/Perceptron-VHDL.runs/synth_1
+# Command line: vivado.exe -log Perceptron.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Perceptron.tcl
+# Log file: C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/vivado/Perceptron-VHDL/Perceptron-VHDL.runs/synth_1/Perceptron.vds
+# Journal file: C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/vivado/Perceptron-VHDL/Perceptron-VHDL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Perceptron.tcl -notrace
+Command: synth_design -top Perceptron -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10472
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1006.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Perceptron' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:39]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_0_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N' (1#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_1_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:211]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_2_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:222]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_3_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:233]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_4_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:244]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_5_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:255]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_6_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:266]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_7_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:277]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_8_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:288]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_9_x' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:299]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_0_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized2' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized2' (1#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_1_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:322]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_2_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:333]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_3_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:344]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_4_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:355]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_5_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:366]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_6_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:377]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_7_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:388]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_8_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:399]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_9_w' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:410]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_b' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:421]
+INFO: [Synth 8-3491] module 'Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:4' bound to instance 'PM' of component 'Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:432]
+INFO: [Synth 8-638] synthesizing module 'Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:44]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_0' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:17]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Unsigned_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:4' bound to instance 'UPM' of component 'Unsigned_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Unsigned_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:16]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'HALF_ADDER' (2#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:13]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'FULL_ADDER' (3#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:14]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:70]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:70]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:70]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:70]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:70]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'FIRST_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:81]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:94]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:115]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:94]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:115]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:94]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:115]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:94]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:115]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:94]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:115]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:94]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'INTERNAL_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:115]
+INFO: [Synth 8-3491] module 'HALF_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/HALF_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'HALF_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:129]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:139]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:139]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:139]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:139]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:139]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:139]
+INFO: [Synth 8-3491] module 'FULL_ADDER' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/FULL_ADDER.vhd:4' bound to instance 'LAST_ROW' of component 'FULL_ADDER' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'Unsigned_Parallel_Multiplier' (4#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Unsigned_Parallel_Multiplier.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Signed_Parallel_Multiplier' (5#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:17]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_1' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:70]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_2' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:81]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_3' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:92]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_4' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:103]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_5' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:114]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_6' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:125]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_7' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:137]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_8' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:148]
+	Parameter Nbit_x bound to: 8 - type: integer 
+	Parameter Nbit_w bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Signed_Parallel_Multiplier' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Signed_Parallel_Multiplier.vhd:5' bound to instance 'SPM_9' of component 'Signed_Parallel_Multiplier' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'Parallel_Multiplier' (6#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Parallel_Multiplier.vhd:44]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_0_p' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:469]
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized4' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized4' (6#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_1_p' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:480]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'DFF_N' declared at 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:4' bound to instance 'REG_2_p' of component 'DFF_N' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:491]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Adder_Tree' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Adder_Tree.vhd:28]
+	Parameter Nbit bound to: 18 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Ripple_carry_adder' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter Nbit bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Ripple_carry_adder' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized6' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized6' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter Nbit bound to: 18 - type: integer 
+	Parameter N bound to: 18 - type: integer 
+	Parameter Nbit bound to: 18 - type: integer 
+	Parameter N bound to: 18 - type: integer 
+	Parameter Nbit bound to: 18 - type: integer 
+	Parameter N bound to: 18 - type: integer 
+	Parameter Nbit bound to: 18 - type: integer 
+	Parameter N bound to: 18 - type: integer 
+	Parameter Nbit bound to: 19 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Ripple_carry_adder__parameterized2' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter Nbit bound to: 19 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Ripple_carry_adder__parameterized2' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter N bound to: 19 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized8' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 19 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized8' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter Nbit bound to: 19 - type: integer 
+	Parameter N bound to: 19 - type: integer 
+	Parameter Nbit bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Ripple_carry_adder__parameterized4' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter Nbit bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Ripple_carry_adder__parameterized4' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized10' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized10' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter Nbit bound to: 20 - type: integer 
+	Parameter N bound to: 20 - type: integer 
+	Parameter Nbit bound to: 21 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Ripple_carry_adder__parameterized6' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+	Parameter Nbit bound to: 21 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Ripple_carry_adder__parameterized6' (7#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Ripple_carry_adder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Adder_Tree' (8#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Adder_Tree.vhd:28]
+	Parameter N bound to: 21 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DFF_N__parameterized12' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+	Parameter N bound to: 21 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DFF_N__parameterized12' (8#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/DFF_N.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'LUT_4096' [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/LUT_4096.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'LUT_4096' (9#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/LUT_4096.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Perceptron' (10#1) [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/src/Perceptron.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1006.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1006.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1006.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1006.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/vivado/Perceptron-VHDL/Perceptron-VHDL.srcs/constrs_Perceptron/new/Perceptron.xdc]
+Finished Parsing XDC File [C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/vivado/Perceptron-VHDL/Perceptron-VHDL.srcs/constrs_Perceptron/new/Perceptron.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1007.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1020.254 ; gain = 12.715
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1020.254 ; gain = 13.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1020.254 ; gain = 13.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1020.254 ; gain = 13.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1020.254 ; gain = 13.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 10    
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 10    
+	   2 Input    8 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 100   
+	   3 Input      1 Bit         XORs := 739   
++---Registers : 
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 5     
+	               17 Bit    Registers := 10    
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 10    
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 10    
+	   2 Input    8 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1020.254 ; gain = 13.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|LUT_4096    | LUT[0]     | 4096x16       | LUT            | 
+|LUT_4096    | LUT[0]     | 4096x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1020.254 ; gain = 13.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1028.652 ; gain = 22.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1136.527 ; gain = 129.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    45|
+|2     |LUT1   |    14|
+|3     |LUT2   |   232|
+|4     |LUT3   |   253|
+|5     |LUT4   |   216|
+|6     |LUT5   |   344|
+|7     |LUT6   |  1500|
+|8     |MUXF7  |   104|
+|9     |MUXF8  |    40|
+|10    |FDCE   |   529|
+|11    |FDPE   |     7|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1150.309 ; gain = 130.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1150.309 ; gain = 143.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1153.559 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 189 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1153.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+153 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1153.559 ; gain = 146.965
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Francesco/Documents/GitHub/Perceptron-VHDL/vivado/Perceptron-VHDL/Perceptron-VHDL.runs/synth_1/Perceptron.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Perceptron_utilization_synth.rpt -pb Perceptron_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 11 23:46:49 2022...
