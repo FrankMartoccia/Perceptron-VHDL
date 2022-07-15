@@ -180,17 +180,17 @@ begin
 	
     lut_process: process(s_r3_out, s_lut_out)
     begin
-		-- The 2's complement is needed if the input of the LUT is negative
         if(s_r3_out(20) = '0') then
             s_lut_in <= s_r3_out;
         else
+		-- The 2's complement is needed if the input of the LUT is negative		
             s_lut_in <= std_logic_vector(unsigned(not(s_r3_out)) + 1);
         end if;
-		-- If the input of the LUT is negative, we get the output of the Perceptron
-		-- from the output of the LUT exploiting simmetry
         if (s_r3_out(20) = '0') then 
             s_out <= std_logic_vector(unsigned(s_lut_out));
         else
+		-- If the input of the LUT is negative, we get the output of the Perceptron
+		-- from the output of the LUT exploiting simmetry
             s_out <= std_logic_vector(32767 - unsigned(s_lut_out));
         end if;
     end process;	
