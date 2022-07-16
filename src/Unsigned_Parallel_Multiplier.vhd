@@ -66,7 +66,7 @@ begin
 									cout => carry_signal(j)
 								);
 			end generate RIGHT_HA;
-			CENTRAL_FA: 		if j > 0 and j < Nbit_x-1 generate
+			CENTRAL_FA: 	if j > 0 and j < Nbit_x-1 generate
 								FIRST_ROW: FULL_ADDER
 								port map 
 								(
@@ -77,7 +77,7 @@ begin
 									cout => carry_signal(j)
 								);
 			end generate CENTRAL_FA;
-			LEFT_HA:			if j = Nbit_x-1 generate
+			LEFT_HA:		if j = Nbit_x-1 generate
 								FIRST_ROW: HALF_ADDER
 								port map
 								(
@@ -100,7 +100,7 @@ begin
 									cout => carry_signal(Nbit_x*(i-1))
 								);
 			end generate RIGHT_HA;
-			CENTRAL_FA:			if j > 0 and j < Nbit_x-1 generate
+			CENTRAL_FA:		if j > 0 and j < Nbit_x-1 generate
 								INTERNAL_ROW: FULL_ADDER
 								port map
 								(
@@ -111,7 +111,7 @@ begin
 									cout => carry_signal((Nbit_x*(i-1)) + j)
 								);
 			end generate CENTRAL_FA;
-			LEFT_FA: 			if j = Nbit_x-1 generate
+			LEFT_FA: 		if j = Nbit_x-1 generate
 								INTERNAL_ROW: FULL_ADDER
 								port map
 								(
