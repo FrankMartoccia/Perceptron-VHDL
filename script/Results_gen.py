@@ -2,27 +2,27 @@ import math
 import sys
 
 LSB_out = 1 / (2 ** 15 - 1)
-LSB_in = 11 / (2 ** 11 - 1)
+LSB_in = 16 / (2 ** 12 - 1)
 
 out_file = open(f"Results.txt", "w")
 
 def genResults(x, w, b, n):
     out_file.write(f"TEST {n}:\n\n")
     out_file.write("x:" + str(x))
-    out_file.write("\tw:" + str(w))
-    out_file.write("\tb:" + str(b))
+    out_file.write("     w:" + str(w))
+    out_file.write("     b:" + str(b))
 
     sum_result = addition(x, w, b)
-    out_file.write(f"\n\nSum:\t\t {sum_result}")
+    out_file.write(f"\n\nSum:   {sum_result}")
 
-    sum_quantized = round(sum_result/LSB_in)
-    out_file.write(f"\n\nQuantized sum:\t {sum_quantized}")
+    LUT_address = round(abs(sum_result)/LSB_in)
+    out_file.write(f"\n\nAddress of the LUT:   {LUT_address}")
 
     s_out = s_output(sum_result)
-    out_file.write(f"\n\nSigmoid output:\t {s_out}")
+    out_file.write(f"\n\nSigmoid output:   {s_out}")
 
     s_out_quantized = round(s_out/LSB_out)
-    out_file.write(f"\n\nQuantized sigmoid output:\t {s_out_quantized}\n\n")
+    out_file.write(f"\n\nQuantized sigmoid output:   {s_out_quantized}\n\n")
 
     out_file.write("-" * 150 + "\n\n")
 
