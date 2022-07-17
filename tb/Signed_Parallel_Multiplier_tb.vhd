@@ -68,7 +68,7 @@ architecture beh of Signed_Parallel_Multiplier_tb is
 				w_tb <= "011111111";
 				wait for 400 ns;
 				x_tb <= "10111111";
-				w_tb <= "011101111";
+				w_tb <= "111101111";
 				wait for 400 ns;
 				x_tb <= "11011011";
 				w_tb <= "001001101";
