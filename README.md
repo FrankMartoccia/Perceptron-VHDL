@@ -23,7 +23,7 @@ The **activation function** is a sigmoid.
 * vector of 16 bits with value in range [0,1].
 
 ## Technologies
-The behaviour and structure of the Perceptron is described with the following **language**:
+The behaviour and structure of the perceptron is described with the following **language**:
 * VHDL
 
 The **tests** to verify the correctness of the system were made with:
